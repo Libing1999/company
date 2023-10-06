@@ -5,6 +5,12 @@ Stack : spring boot
 
 
 application.yaml file
+
+
+
+
+
+
 spring:
   datasource:
     url: jdbc:h2:file:/data/demo;
