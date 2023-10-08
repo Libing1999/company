@@ -23,27 +23,29 @@ public class CompanyController {
     private CompanyService companyService;
 
     @PostMapping("/addcompany")
-        public CompanyEntity create(@RequestBody CompanyEntity company) {
-            return companyService.create(company);
-        
+    public CompanyEntity create(@RequestBody CompanyEntity company) {
+        return companyService.create(company);
+
     }
 
     @GetMapping("/get")
-    public List<CompanyEntity> get(){
+    public List<CompanyEntity> get() {
         return companyService.get();
     }
 
     @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable("id") Long id){
+    public void delete(@PathVariable("id") Long id) {
         companyService.delete(id);
     }
-@GetMapping("/country/{country}")
-public List<CompanyEntity> getCountry(@PathVariable("country") String country){
-    return companyService.getCountry(country);
-}
-@PutMapping("/edit/{id}")
-public CompanyEntity put(@PathVariable("id") Long id,@RequestBody CompanyEntity companyEntity){
-return companyService.put(id,companyEntity);
-}
-    
+
+    @GetMapping("/country/{country}")
+    public List<CompanyEntity> getCountry(@PathVariable("country") String country) {
+        return companyService.getCountry(country);
+    }
+
+    @PutMapping("/edit/{id}")
+    public CompanyEntity put(@PathVariable("id") Long id, @RequestBody CompanyEntity company) {
+        return companyService.put(id, company);
+    }
+
 }
