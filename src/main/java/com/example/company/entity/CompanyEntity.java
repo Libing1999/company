@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="tbl_company")
+@Table(name = "tbl_company")
 public class CompanyEntity {
     @Id
     @GeneratedValue
