@@ -25,7 +25,12 @@ public class CompanyService {
         companyRepository.deleteById(id);
     }
 
-    public List<CompanyEntity> getCountry(String country){
+    public List<CompanyEntity> getCountry(String country) {
         return companyRepository.findByCountry(country);
     }
+
+    public CompanyEntity put(Long id, CompanyEntity companyEntity){
+        return companyRepository.save(companyEntity);
+    }
+
 }
