@@ -29,8 +29,8 @@ public class CompanyService {
         return companyRepository.findByCountry(country);
     }
 
-    public CompanyEntity put(Long id, CompanyEntity companyEntity){
-        return companyRepository.save(companyEntity);
+    public CompanyEntity put(Long id, CompanyEntity company){
+        return companyRepository.save(company);
     }
 
 }
