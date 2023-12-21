@@ -14,14 +14,8 @@ application.yaml file
 
 
 
-
-
-
-spring:
-
-
-  datasource:
-   
+     spring:
+    datasource:
     url: jdbc:h2:file:/data/demo;
   
     username: sa
@@ -31,13 +25,11 @@ spring:
     driverClassName: org.h2.Driver
 
 
-    
-  h2:
+      h2:
     console.enabled: true
 
 
-    
-  jpa:
+     jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
