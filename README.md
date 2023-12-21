@@ -21,6 +21,7 @@ spring:
 
 
   datasource:
+   
     url: jdbc:h2:file:/data/demo;
   
     username: sa
